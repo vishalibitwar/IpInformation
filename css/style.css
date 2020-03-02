@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Trade+Winds&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: blueviolet;
+}
+
+body {
+  background: var(--primary-color);
+  background-attachment: fixed;
+  font-family: 'Muli';
+}
+
+#outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gray98 {
+  background-color: #fafafa;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#ipInput {
+  border: none;
+}
+
+#outer .row .form-control {
+  border: none;
+  background-color: white;
+}
+
+h4 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-family: 'Trade Winds';
+}
+
+label {
+  color: black;
+  font-size: 1.3rem;
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.ipInformation {
+  /* border-right: 3px dashed var(--primary-color); */
+  box-shadow: 0.5rem 0.5rem 0.6rem var(--primary-color);
+  border-radius: 10px;
+}
+
+footer a {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+
+
+@media(max-width:500px) {
+
+  .ipInformation,
+  .ipInformation2 {
+    margin-top: 1.4rem;
+    box-shadow: 0.5rem 0.4rem 0.4rem var(--primary-color) inset, -0.5rem -0.4rem 0.4rem var(--primary-color) inset;
+  }
+
+  footer a {
+    visibility: hidden;
+  }
+
+}
